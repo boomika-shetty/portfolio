@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boomika Shetty | CS Portfolio</title>
+    <title>Boomika Shetty | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons (LinkedIn/Email) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -22,14 +24,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="about">
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Boomika Shetty</span></h1>
-            <h2>Computer Science Engineering Student</h2>
-            <p>I build accessible, pixel-perfect, and performant web applications.</p>
+            <h2>Aspiring Full Stack Developer</h2>
+            <p>
+                3rd Year CSE Student at <strong>East West College of Engineering</strong>.<br>
+                Building web applications with JavaScript & TypeScript while actively upskilling in <strong>Python</strong>.
+            </p>
             <div class="buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
-                <a href="#" class="btn secondary">Download Resume</a>
+                <a href="#contact" class="btn secondary">Hire Me</a>
             </div>
         </div>
     </section>
@@ -39,72 +44,85 @@
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Languages</h3>
-                <p>Python, C++, Java, JavaScript</p>
+                <h3>Core Languages</h3>
+                <p>C, C++, JavaScript</p>
+                <p style="margin-top:5px; font-size:0.9em; color:#64ffda;">Currently Learning: Python 🐍</p>
             </div>
             <div class="skill-card">
-                <h3>Frontend</h3>
-                <p>HTML5, CSS3, React.js, Tailwind</p>
+                <h3>Web Technologies</h3>
+                <p>HTML5, CSS3, TypeScript</p>
             </div>
             <div class="skill-card">
-                <h3>Backend & DB</h3>
-                <p>Node.js, MySQL, MongoDB</p>
-            </div>
-            <div class="skill-card">
-                <h3>Tools</h3>
-                <p>Git, GitHub, VS Code, Linux</p>
+                <h3>Tools & DevEnv</h3>
+                <p>Git, GitHub, VS Code</p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-grid">
-            <!-- Project 1 -->
+        <h2 class="section-title">Featured Work</h2>
+        
+        <!-- Since you have 1 main project, we center it to look premium -->
+        <div class="project-grid" style="justify-content: center;">
+            
+            <!-- Project 1: finAI -->
             <div class="project-card">
-                <h3>Smart Health Tracker</h3>
-                <p class="tech-stack">Python • Django • React</p>
-                <p>A web app that predicts health risks using ML algorithms based on user diet and exercise data.</p>
+                <div class="card-header">
+                    <h3>finAI - Financial Advisory System</h3>
+                    <span class="badge">Star Project</span>
+                </div>
+                <p class="tech-stack">TypeScript • JavaScript • CSS • AI Logic</p>
+                <p>
+                    A comprehensive financial assistant that combines multiple features:
+                    <br>• <strong>AI Chatbot:</strong> Answers finance-related queries.
+                    <br>• <strong>Budgeting:</strong> Calculates savings based on income/expenses.
+                    <br>• <strong>Predictions:</strong> Forecasts market trends.
+                </p>
                 <div class="project-links">
-                    <a href="#">View Code</a>
-                    <a href="#">Live Demo</a>
+                    <!-- Update this link if your repo name is different -->
+                    <a href="https://github.com/boomika-shetty/finAI" target="_blank">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
                 </div>
             </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>E-Commerce Dashboard</h3>
-                <p class="tech-stack">React • Node.js • MongoDB</p>
-                <p>Full-stack admin panel to manage products, orders, and view sales analytics in real-time.</p>
+            <!-- Placeholder for Future Project (Shows ambition) -->
+            <div class="project-card" style="opacity: 0.7;">
+                <h3>Upcoming: Python Automation</h3>
+                <p class="tech-stack">Python • Automation</p>
+                <p>Currently experimenting with Python scripts to automate daily tasks and data handling. Coming soon!</p>
                 <div class="project-links">
-                    <a href="#">View Code</a>
-                    <a href="#">Live Demo</a>
+                    <span>🚧 Work in Progress</span>
                 </div>
             </div>
 
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>Library Management System</h3>
-                <p class="tech-stack">Java • MySQL • JDBC</p>
-                <p>Desktop application for university libraries to manage book issues and returns efficiently.</p>
-                <div class="project-links">
-                    <a href="#">View Code</a>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer / Contact -->
     <footer id="contact">
         <h2>Let's Connect</h2>
-        <p>Open for Internships & Opportunities</p>
+        <p>I am open to Web Development projects and internship opportunities.</p>
+        
         <div class="social-links">
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="mailto:boomika.example@gmail.com">Email</a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/boomika-shetty-102990320" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            
+            <!-- GitHub -->
+            <a href="https://github.com/boomika-shetty" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:boomikashetty2929@gmail.com">
+                <i class="fas fa-envelope"></i> Email Me
+            </a>
         </div>
-        <p class="copyright">© 2024 Boomika Shetty. Built with code.</p>
+        
+        <p class="copyright">© 2026 Boomika Shetty. Built with code.</p>
     </footer>
 
 </body>
